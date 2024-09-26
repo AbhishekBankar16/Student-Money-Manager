@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Money Manager - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Expense Dashboard</h1>
+    </header>
+
+    <main class="container">
+        <h2>Welcome, <span id="profile-username"></span>!</h2>
+
+        <!-- Expense Form -->
+        <form id="expense-form">
+            <label for="amount">Money Spent:</label>
+            <input type="number" id="amount" required>
+
+            <label for="payment-method">Spent Through:</label>
+            <select id="payment-method" required>
+                <option value="cash">Cash</option>
+                <option value="UPI">UPI</option>
+            </select>
+
+            <label for="category">Spent For:</label>
+            <select id="category" required>
+                <option value="food">Food</option>
+                <option value="stationary">Stationary</option>
+                <option value="recharge">Recharge</option>
+                <option value="rent">Room Rent</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="travel">Travel</option>
+            </select>
+             <label for="expense-date">Expense Date:</label>
+             <input type="date" id="expense-date" required>
+
+            <button type="submit">Add Expense</button>
+        </form>
+        <label for="view-period">View Expenses By:</label>
+        <select id="view-period">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+        </select>
+        
+        <button id="view-expenses-btn">View Expenses</button>
+        
+        <!-- Table to display the expenses -->
+        <table id="expenses-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Payment Method</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Expenses will be populated here -->
+            </tbody>
+        </table>
+        
+
+       
+        <button id="download-weekly-csv">Download Weekly CSV</button>
+        <button id="download-monthly-csv">Download Monthly CSV</button>
+        <button id="generate-weekly-report">Generate Weekly Report</button>
+        <button id="generate-monthly-report">Generate Monthly Report</button>
+
+        <button id="logout-btn">Logout</button>
+    </main>
+
+    <footer>
+        <p>&copy;<h1>2024 Student Money Manager by Abhishek Bankar</h1></p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

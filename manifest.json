@@ -1,0 +1,38 @@
+{
+    "name": "Student Money Manager",
+    "short_name": "MoneyManager",
+    "description": "Track your daily expenses easily with Student Money Manager.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f4f4f4",
+    "theme_color": "#4CAF50",
+    "scope": "/",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icon.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "icon.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "icon.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ]
+}
